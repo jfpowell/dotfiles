@@ -25,5 +25,4 @@ set nohls
 
 set incsearch
 
-set t_Co=256
 colorscheme molokai
