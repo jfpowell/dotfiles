@@ -25,4 +25,6 @@ set nohls
 
 set incsearch
 
+syntax on
+
 colorscheme molokai
