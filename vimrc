@@ -13,7 +13,7 @@ set tabstop=4
 set shiftwidth=4
 set wrap
 set textwidth=80
-set formatoptions=qrn1
+set formatoptions=tcqrn1
 set colorcolumn=85
 
 "Disable arrow keys for movement
