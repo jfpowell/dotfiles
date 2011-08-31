@@ -16,6 +16,16 @@ set textwidth=80
 set formatoptions=qrn1
 set colorcolumn=85
 
+"Disable arrow keys for movement
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
+
 "Matching parentheses
 set showmatch
 
@@ -33,7 +43,12 @@ syntax on
 
 colorscheme molokai
 
-set guifont=monospace\ 14
+"Set some nice fonts for gvim
+if has("unix")
+    set guifont=monospace\ 14
+elseif has("win32") || has("win64")
+    set guifont=lucida\ console:h14:cANSI
+endif    
 
 filetype plugin on
 
