@@ -11,6 +11,10 @@ set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
+set wrap
+set textwidth=80
+set formatoptions=qrn1
+set colorcolumn=85
 
 "Matching parentheses
 set showmatch
@@ -28,3 +32,14 @@ set incsearch
 syntax on
 
 colorscheme molokai
+
+set guifont=monospace\ 14
+
+filetype plugin on
+
+set grepprg=grep\ -nH\ $*
+
+filetype indent on
+
+let g:tex_flavor='latex'
+let g:Tex_DefaultTargetFormat='pdf'
