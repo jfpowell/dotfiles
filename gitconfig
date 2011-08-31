@@ -1,0 +1,9 @@
+[user]
+	name = Jonathan Powell
+	email = jpowell@jpowell.co.uk
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[core]
+	editor = vim
