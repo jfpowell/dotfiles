@@ -58,3 +58,18 @@ filetype indent on
 
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
+
+" Powerful Backspaces
+set backspace=indent,eol,start
+
+" Ignore case while searching
+set ignorecase
+
+" Show partial commands
+set showcmd
+
+" Write before hiding a buffer
+set autowrite
+
+" Dark background
+set bg=dark
