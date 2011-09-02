@@ -16,15 +16,11 @@ set textwidth=80
 set formatoptions=tcqrn1
 
 "Disable arrow keys for movement
-inoremap  <Up>     <NOP>
-inoremap  <Down>   <NOP>
-inoremap  <Left>   <NOP>
-inoremap  <Right>  <NOP>
 noremap   <Up>     <NOP>
 noremap   <Down>   <NOP>
 noremap   <Left>   <NOP>
 noremap   <Right>  <NOP>
-
+imap      ii       <Esc>
 "Matching parentheses
 set showmatch
 
