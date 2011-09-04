@@ -7,4 +7,5 @@
 	branch = auto
 [core]
 	editor = vim
-    autocrlf = true
+    autocrlf = input
+    eol = input
