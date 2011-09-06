@@ -33,23 +33,24 @@ set ruler
 set nohls
 
 set incsearch
-
+" Pathogen Load
+call pathogen#infect()
 syntax on
-
-colorscheme molokai
-
+filetype plugin indent on
+set background=dark
+colorscheme solarized
 "Set some nice fonts for gvim
 if has("unix")
-    set guifont=monospace\ 14
+    if hostname()=='selene'
+        set guifont=monospace\ 12
+    else
+        set guifont=monospace\ 14
+    endif
 elseif has("win32") || has("win64")
     set guifont=lucida\ console:h14:cANSI
 endif    
 
-filetype plugin on
-
 set grepprg=grep\ -nH\ $*
-
-filetype indent on
 
 let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
@@ -76,6 +77,3 @@ set showcmd
 
 " Write before hiding a buffer
 set autowrite
-
-" Dark background
-set bg=dark
