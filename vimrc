@@ -37,6 +37,7 @@ set incsearch
 call pathogen#infect()
 syntax on
 filetype plugin indent on
+let g:solarized_contrast="high"    "default value is normal
 set background=dark
 colorscheme solarized
 "Set some nice fonts for gvim
