@@ -78,3 +78,6 @@ set showcmd
 
 " Write before hiding a buffer
 set autowrite
+
+" Save files as root
+cmap w!! w !sudo tee % >/dev/null
